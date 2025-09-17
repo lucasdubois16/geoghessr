@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="gameStyle.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+        <title>GeoGhessR</title>
+    </head>
+    <body>
+        <div id="streetview-container">
+            <div id="street-view"></div>
+            <div id="hud">
+                <div id="score"> 0 p</div>
+                <div id="round-info">Manche 1</div>
+                <div id="timer">00:00</div>
+            </div>
+            <div id="map-container">
+                <div id="map"></div>
+                <button id="valider">Valider</button>
+            </div>
+        </div>
+        <div id="result-popup" class="hidden">
+            <p id="result-text"></p>
+            <button id="continue">Continuer</button>
+        </div>
+        <div id="end-popup" class="hidden">
+            <p id="end-text"></p>
+            <button id="end-btn">Terminer</button>
+        </div>
+
+
+
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+        <script src="gameScript.js"></script>
+        <script async 
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCllVkOoWBaq_pRpcRuYJdOFZ6AxgE7Cio&callback=initStreetView">
+        </script>
+
+    </body>
+</html>

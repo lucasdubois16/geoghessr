@@ -1,0 +1,85 @@
+#streetview-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* plein écran */
+}
+
+#street-view {
+    width: 100%;
+    height: 100%;
+}
+
+#map-container {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* au-dessus de streetview */
+    background: rgba(255,255,255,0.9);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#map {
+    width: 300px;
+    height: 200px;
+}
+
+#validate {
+    display: block;
+    margin-top: 5px;
+    width: 100%;
+}
+#result-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    z-index: 2000;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#continue {
+    margin-top: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#hud {
+    position: fixed;        /* attaché à la fenêtre */
+    top: 20px;              /* 20px depuis le haut */
+    left: 50%;              /* centré horizontalement */
+    transform: translateX(-50%); /* décale de moitié pour bien centrer */
+    
+    background: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    text-align: center;
+    z-index: 1000;
+    font-weight: bold;
+}
+#end-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    z-index: 2000;
+    text-align: center;
+}
+#end-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
