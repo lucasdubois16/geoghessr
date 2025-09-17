@@ -168,5 +168,5 @@ function calculatePoints(distance) {
 }
 
 document.getElementById("end-btn").addEventListener("click", function(){
-    window.location.href = "menu.html";
+    window.location.href = "index.html";
 })
