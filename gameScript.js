@@ -64,7 +64,6 @@ function startRound(){
 
 function endRound(points){
     clearInterval(timer);
-    totalScore += points;
     if(currentRound >= rounds){
         document.getElementById("end-text").innerHTML = totalScore+" Points !";
         document.getElementById("end-popup").classList.remove("hidden");
@@ -155,9 +154,19 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("result-popup").classList.remove("hidden");
     })
 
+    // gestion du clic sur le bouton "continuer" du popup de fin de manche 
     document.getElementById("continue").addEventListener("click", function() {
         document.getElementById("result-popup").classList.add("hidden");
         endRound(points);
+
+    //gestion de la taille de l'overlay de la carte 
+    document.getElementById("map").addEventListener("mouseenter", function(){
+        console.log("coucou")
+        document.getElementById("map").classList.add("map-big")
+    })
+    document.getElementById("map").addEventListener("mouseleave", function(){
+        document.getElementById("map").classList.remove("map-big")
+    })
 });
  startRound()
 });
@@ -168,5 +177,5 @@ function calculatePoints(distance) {
 }
 
 document.getElementById("end-btn").addEventListener("click", function(){
-    window.location.href = "menu.html";
+    window.location.href = "geoghessr/index.html";
 })

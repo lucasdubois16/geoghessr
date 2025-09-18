@@ -12,7 +12,7 @@ document.getElementById("back-btn").addEventListener("click", () => {
 });
 
 document.getElementById("play-btn").addEventListener("click", () => {
-    window.location.href = "game.html";
+    window.location.href = "geoghessr/game.html";
 });
 
 
