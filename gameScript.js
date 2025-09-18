@@ -177,5 +177,5 @@ function calculatePoints(distance) {
 }
 
 document.getElementById("end-btn").addEventListener("click", function(){
-    window.location.href = "geoghessr/index.html";
+    window.location.href = "index.html";
 })
