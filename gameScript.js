@@ -64,7 +64,6 @@ function startRound(){
 
 function endRound(points){
     clearInterval(timer);
-    totalScore += points;
     if(currentRound >= rounds){
         document.getElementById("end-text").innerHTML = totalScore+" Points !";
         document.getElementById("end-popup").classList.remove("hidden");
